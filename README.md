@@ -16,11 +16,5 @@ Finally, docker copies everything in src/ inside this repository to the /var/www
 
  - Ensure you have Docker installed
  - `git clone` this repository
- - `sudo docker build -t docker-php-helloworld .` 
- - `sudo docker run -p 80:80 docker-php-helloworld`
-
-# What You Should See
-
-![Docker PHP App](https://image.ibb.co/cTxSf7/whale.png "Hello World")
-
-This was originally created to test Amazon Elastic Container Service which is why Moby Dock says "Hello ECS!"
+ - `sudo docker build -t docker-php-sendgrid .` or `docker build -t docker-php-sendgrid .` depending on your platform and privileges. 
+ - `sudo docker run -d -p 80:80 docker-php-sendgrid` or `docker run -d -p 80:80 docker-php-sendgrid` depending on your platform and privileges. 
